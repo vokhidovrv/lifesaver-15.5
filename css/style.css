@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    background-color: #161c22;
+}
+.start,.game{
+    display: none;
+}
+.start{
+    width: 600px;
+    margin: 120px auto;
+    text-align: center; 
+
+}
+.start input{
+    font-size: 25px;
+    border-radius:10px;
+    outline: none;
+    border: none;
+    margin: 30px 0;
+    padding: 10px;
+    background-color: rgb(76, 68, 124);
+    color: #fff;
+}
+.start input::placeholder{
+    color: rgb(150, 150, 150);
+}
+.start button{
+    font-size: 25px;
+    border-radius:10px;
+    outline: none;
+    border: none;
+    margin: 30px 0;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(76, 68, 124);
+    font-family: 'Bungee Inline', cursive;
+    cursor: pointer;
+}
+.start button:disabled{
+    color: rgb(201, 200, 200);
+    background-color: rgb(35, 28, 77);
+    cursor:not-allowed;
+}
+.about{
+    margin: 60px auto;
+    width: 90%;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-family: 'Amatic SC', cursive;
+}
+.active{
+    opacity: 1;
+    display: block;
+    visibility: visible;
+}
+.game_zone table td{
+    width: 64px;
+    height: 64px;
+    /* border:1px solid red; */
+    background: url("../img/ground.png");
+}
+#player{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background:url("../img/player.png") no-repeat;
+}
+.game{
+    position: relative;
+}
+.score{
+    background: url('../img/hud-bg.png');
+    background-position: center;
+    background-size: 100%;
+    height:5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.score span{
+    display: flex;
+    align-items: center;
+}
+.record{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.record span{
+    margin: 10px;
+    padding: 10px;
+}
+.game_zone{
+
+    position: absolute;
+    height: 95vh;
+    width: 100%;
+}
+.game_zone img{
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    margin: 0;
+    vertical-align:middle;
+}
