@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeSaver</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bungee+Inline&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="start">
+        <img src="img/logo.svg" alt="">
+        <p class="about">Герой этой игры - доктор, который спасает жизни жертв землетрясения, собирая сердца. У него будут сердца, которые нужно собирать, и в то же время опасные камни, которые нужно держать подальше от них.</p>
+
+        <input type="text" id="nickname" placeholder="Nickname">
+        <br>
+        <button disabled id="start_button">Start</button>
+    </div>
+    <div class="game">
+        <div class="score">
+            <img src="img/logo.svg" alt="">
+            <div class="record">
+                <span><img src="img/clock.png" alt=""><p id="timer">0:00</p></span>
+                <span><img src="img/user.png" alt=""><p id="name_player"></p></span>
+                <span><img src="img/heart.svg" alt=""><p id="score_heart">0/10</p></span>
+                <!-- <span><button id="restart">Рестарт</button></span> -->
+            </div>
+        </div>
+        <div class="game_zone">
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
